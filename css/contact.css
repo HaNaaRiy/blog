@@ -1,0 +1,44 @@
+.contact-content{
+    height: 75vh;
+    margin: 10px auto;
+    /* padding:20px; */
+    text-align: justify;
+    /* display: flex; */
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    /* background-color: pink; */
+    z-index: 1;
+}
+.contact-content::after{
+    z-index: -1;
+    content: '';
+    background-image: url('../img/office.jpg');
+    border-radius: 20px;
+    background-size: cover;
+    background-position: center;
+    width: 100%; /*could also be inherit*/
+    height: inherit; /*could also be 100% of parent*/
+    position: absolute;
+    top: 0;
+    opacity: 0.4;
+    
+}
+
+.form-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 40vw;
+    padding-left: 25px;
+}
+.form-box input{
+    margin-bottom: 7px;
+}
+.form-box textarea{
+    margin-bottom: 7px;
+    padding: 5px 8px;
+    border: 2px solid black;
+    border-radius: 6px;
+
+}
